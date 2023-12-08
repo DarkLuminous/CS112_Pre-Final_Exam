@@ -22,7 +22,7 @@ while True:
         print("Numbers Only Please!")
         continue
 
-    if (start) == 0:
+    if int(start) == 0:
             print("Enter zero again to Exit")
             
         
@@ -41,7 +41,7 @@ while True:
         print(f"Enter a number greather than [start] = {start}.")
         continue
     
-    elif (start or end) == 0:
+    if int(start or end) == 0:
             In_Outro() 
             exit()
             
