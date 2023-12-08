@@ -8,11 +8,11 @@ print("PROBLEM: Create a python program that display all prime number within a r
 print("RULES TO CONSIDER:")
 print("[1] If number[start] is a negative number, The program will promt a message: Enter a non-negative number.")
 print("[2] If number[end] is less than number[start]. The program will promt a message: Enter a Greater number than number[start].")
-print("[3] If the user enter the number 0, the program will terminate.\n\n\n")
+print("[3] If the user enter the number 0, the program will terminate.\n")
 
             
 while True:
-    input("Press Enter to Continue . . .")
+    input("\n\nPress Enter to Continue . . .")
     os.system('cls')
     
     start = input("Enter a Number [start]\n=")    
@@ -49,4 +49,4 @@ while True:
                     primeCheck = False
                     break
             if primeCheck:
-                print(num)
+                print(num, end=" ",)
