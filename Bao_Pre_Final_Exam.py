@@ -16,10 +16,9 @@ while True:
     os.system('cls')
     
     start = input("Enter a Number [start]\n=")    
-    InpCheck = start.isdigit() #check input if number if valid
-     
-    if InpCheck == False:
-        print("Numbers Only Please!")
+    
+    if int(start) < 0:
+        print("Enter a non-negative number.")
         continue
 
     if int(start) == 0:
@@ -27,18 +26,13 @@ while True:
             
         
     end = input("Enter a Number [end]\n=")
-    InpCheck2 = end.isdigit() #check input if number if valid
-     
-    if InpCheck2 == False:
-        print("Numbers Only Please!")
-        continue
 
-    if int(start) < 0:
+    if int(end) < 0:
         print("Enter a non-negative number.")
         continue
-    
-    elif int(end) < int(start):
-        print(f"Enter a number greather than [start] = {start}.")
+
+    if int(end) < int(start):
+        print(f"Enter a number greather than {start}.")
         continue
     
     if int(start or end) == 0:
